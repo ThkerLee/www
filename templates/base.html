@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Welcome NexERP</title>
+	<link rel="stylesheet" type="text/css" href="{{static_url("base.css")}}">
+</head>
+<body>
+	<div class="contain">
+		<div class="top">
+			<div class="logo">
+				<img src="test.jpg" 	alt="The LOGO Picture">
+			</div>
+			<div class ="users">
+				<table border="0">
+				<tr>
+				<td>username</td>
+				<td><a href="urlchangepass">change pass</a></td>
+				<td><a href="urluseseting"> setting</a></td>
+				</tr>
+				</table>
+			</div>
+		</div>
+	<div class="body">
+		<div class="left">
+			{% block bodyleft %} 
+			{% end %}
+		</div>
+		<div class="right">
+			{% block bodyright %} 
+			{% end %}
+		</div>
+
+	</div>
+	<div class="buttom">
+		{% block buttom %} 
+		{% end %}		
+	</div>
+	</div>
+</body>
+</html>
