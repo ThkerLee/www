@@ -19,7 +19,7 @@ a {
 
 	float: none;
 	width: 100%;
-	font-size: 25px;
+	font-size: 20px;
 	height: 115%
 }
 .top {
@@ -27,17 +27,20 @@ a {
 	background-color: lavender;
 }
 .logo {
-	margin-left: 10px;
-	height: 98%;
-	width: 25%;
+
+	height: 70px;
+	width: 20%;
 	float: left;
+	background-color: #89c;
 
 }
 
 .users{
-	height: 100%;
-	width: 260px;
+	height: 29px;
+	width: 250px;
 	float: right;
+	margin: 40px 0px 0px 0px;
+	background-color: #94a;
 
 }
 
@@ -72,23 +75,27 @@ a {
 
 }
 .left-nav li{
+	margin: 2px;
+	width: 90%;
 	list-style-type: none;
 	display: list-item;
+	background-color: #ff0;
 
 }
 .left-nav li a{
 	text-decoration: none;
 	padding: 5px 5px;
+
 }
 .nav li a:hover{
 	color: #ff0;
 	background-color: #f00;
 }
 
-.buttom{
-
-	height: 80px;
+.buttom{	
+	margin:15px 0px 15px 0px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #2c4e55;
+	background-color: #9a4;
 }
