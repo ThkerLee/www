@@ -11,7 +11,22 @@ body,input{
 }
 a {
 	text-decoration: none;
+
+}
+li a{
+	text-decoration: none;
 	padding: 5px 5px;
+
+}
+li a:hover{
+	color: #ff0;
+	background-color: #a36fff;
+}
+input[type="text"]{
+	border-width:0px;
+	border-bottom:1px solid black;
+	height: 25px;
+	display: inline;
 }
 .contain {
 	padding: 0px;
@@ -34,7 +49,23 @@ a {
 	background-color: #89c;
 
 }
-
+.top-nav {
+	height: 40px;
+	width: auto;
+	background-color: #99aa44;
+	float: left;
+	margin: 30px 0px 0px 5px;
+}
+.top-nav ul{
+	margin: 0px;
+	font-size: 20px;
+	height: 40px;
+}
+.top-nav li{
+	margin: 8px auto auto -38px;
+	list-style-type: none;
+	display: block;
+}
 .users{
 	height: 29px;
 	width: 250px;
@@ -48,13 +79,7 @@ a {
 	height: 100%;
 
 }
-.right{
-	height: 100%;
-	width: 80%;
-	float: right;
-	background-color: #bcfaff;
 
-}
 
 .left{
 	height: 100%;
@@ -82,16 +107,44 @@ a {
 	background-color: #ff0;
 
 }
-.left-nav li a{
-	text-decoration: none;
-	padding: 5px 5px;
+.right-mini-nav{
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 80%;
+	font-size: 14px;
+	color: grey;
+	float: right;
+}
+.right{
+	width: 80%;
+	float: right;
+	background-color: #0c4fff;
 
 }
-.nav li a:hover{
-	color: #ff0;
-	background-color: #f00;
-}
 
+.right-nav{
+	width:100%;
+	background-color: aqua;
+
+}
+.right-nav ul{
+	margin: 0px;
+	font-size: 20px;
+	line-height: 30px;
+}
+.right-nav li{
+	margin: 2px;
+	width: 500px;
+	list-style-type: none;
+	display: inline;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2c4e55;
+}
+.right-content{
+	width:80%;
+}
 .buttom{	
 	margin:15px 0px 15px 0px;
 	border-style: solid;
