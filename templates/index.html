@@ -6,12 +6,18 @@
 	<script type="text/javascript" src="{{static_url("jquery")}}">
 	</script>
 	<script type="text/javascript">
-		$("document").ready(function(){
+	$("document").ready(function(){
+			conwidth=$(window).width();
+			rightwidth=conwidth-188;
+			$(".contain").css("width",conwidth)
+			$(".right").css("width",rightwidth)
+
 			$(".left").load('/templates/left-nav.html');
 			$(".right-nav").load("./templates/right-nav.html");
 			$(".topnav").load("./templates/top-nav.html");
 			$(".right-content").load("./templates/right-content.html");
 			$(".right-mini-nav").load("./templates/right-mini-nav.html");
+
 		})
 	</script>
 </head>
@@ -59,11 +65,11 @@
 		</div>
 
 
-	<div class="buttom">
+	    <div class="buttom">
 
-		<h2>block buttom</h2>
-			
+		    <h2>block buttom</h2>
+
+	    </div>
 	</div>
-	</div> 
 </body>
 </html>
