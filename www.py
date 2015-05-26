@@ -6,16 +6,47 @@ from tornado.options import define,options
 define("port",default=8888,help="run on the given port",type=int)
 define("debug",default=True,help="run in debug mode")
 class mainhandler(tornado.web.RequestHandler):
+
 	def get(self):
-		self.render("index.html")
+		 self.render("index.html")
+		# self.render("index-model.html")
+class top_nav(tornado.web.RequestHandler):
+
+	def get(self):
+		self.render("top-nav.html")
+
+class left_nav(tornado.web.RequestHandler):
+
+	def get(self):
+		self.render('left-nav.html')
+class right_nav(tornado.web.RequestHandler):
+
+	def get(self):
+		self.render("right-nav.html")
+
+class right_mini_nav(tornado.web.RequestHandler):
+
+	def get(self):
+		self.render("right-mini-nav.html")
+
+class right_content(tornado.web.RequestHandler):
+
+	def get(self):
+		self.render("right-conent.html")
+
 
 
 def main():
 	app=tornado.web.Application(
 		[
 		(r"/",mainhandler),
-
+		(r"/templates/left-nav.html",left_nav),
+		(r"/templates/right-nav.html",right_nav),
+		(r"/templates/top-nav.html",top_nav),
+		(r"/templates/right-content.html",right_content),
+		(r"/templates/right-mini-nav.html",right_mini_nav),
 		],
+
 		template_path=os.path.join(os.path.dirname(__file__),"templates"),
 		static_path=os.path.join(os.path.dirname(__file__),"static"),
 		debug=options.debug,
