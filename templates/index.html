@@ -7,7 +7,7 @@
 	</script>
 	<script type="text/javascript">
 	$("document").ready(function(){
-			conwidth=$(window).width();
+			conwidth=$(window).width()-2;
 			rightwidth=conwidth-188;
 			$(".contain").css("width",conwidth)
 			$(".right").css("width",rightwidth)
@@ -28,9 +28,16 @@
 				<img src="test.jpg" 	alt="The LOGO">
 			</div>
 			<div class ="users">
-				<a href="urlchangepass">change pass</a>
-				<a href="urluseseting"> setting</a>
+				<ul>
+					<li><a href="urlchangepass">username</a></li>
+				</ul>
 			</div>
+			<div class ="users">
+				<ul>
+					<li><a href="urlchangepass">change pass</a></li>
+				</ul>
+			</div>
+
 
 
 			<div class="topnav">

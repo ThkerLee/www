@@ -1,12 +1,12 @@
 
 body{
-	background-color: ivory;
+	background-color: white;
 	margin: 0px;
+
 }
 body,input{
-	font-family: sans-serif;
+	font-family: 微软雅黑,宋体;
 	font-size: 10px;
-	color: rgba(16, 16, 16, 0.93);
 }
 
 a {
@@ -15,12 +15,23 @@ a {
 }
 li a{
 	width: 100%;
+
 	text-decoration: none;
-	padding: 5px 5px;
+	padding: 5px 15px 5px 5px;
 
 }
-li a:hover{
-	color: blue;
+.right-mini-nav  span a:link,.right-mini-nav span a:visited{
+	color: #2058b4;
+}
+.top-nav li a:link,.top-nav li a:visited,.left-nav span a:link,.left-nav span a:visited{
+	color: #393b3d;
+
+}
+li a:link,a:visited{
+	color: #393b3d;
+}
+li a:hover,.top-nav li a:hover,.left-nav span a:hover {
+	color: #2058b4;
 	width: 100%;
 }
 input[type="text"]{
@@ -31,7 +42,7 @@ input[type="text"]{
 }
 .contain {
 	padding: 0px;
-	margin:3px;
+	margin:1px;
 	float: none;
 	width: 80%;
 	font-size: 20px;
@@ -41,7 +52,7 @@ input[type="text"]{
 }
 .top {
 	height: 70px;
-	background-color: #eeeeee;
+	background-color: #f2f2f2;
 }
 .logo {
 
@@ -52,14 +63,16 @@ input[type="text"]{
 
 }
 .top-nav {
+
 	height: 40px;
+	height: 38px\9;
 	width: auto;
-	background-color: lightgray;
+	/*background-color: lightgray;*/
 	float: left;
-	margin: 28px 0px 0px 5px;
-	border-width: 1px;
-	border-color: white;
-	border-style: solid;
+	margin: 28px 0px 0px 0px;
+	/*border-width: 1px;*/
+	/*border-color: ivory;*/
+	/*border-style: solid;*/
 }
 .top-nav ul{
 	margin: 0px;
@@ -73,14 +86,20 @@ input[type="text"]{
 }
 .users{
 	height: 28px;
-	*width: 200px!important;
+	width: auto;
 	float: right;
 	margin: 40px 0px 0px 0px;
-	background-color:lightgray;
+
 }
-.users a{
-	padding: 2px auto;
-	float: left;
+.users ul{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 28px;
+}
+.users ul li{
+	display: block;
+	list-style-type: none;
 }
 
 .body{
@@ -93,16 +112,25 @@ input[type="text"]{
 	height: 100%;
 	width: 180px;
 	float:left;
+	margin: 0px;
+	padding: 0px;
 
 }
 .left-nav{
 	width: 100%;
-	height: 100%;
 	margin: 0px;
 
 }
+.left-nav span{
+	background-color: #f2f2f2;
+	height: 32px;
+	height: 28px\9;
+	width: 176px\9;
+	display: block;
+	margin: 2px;
+}
 .left-nav ul{
-	margin: 0px 0px 0px -26px;
+	margin: 0px 0px 0px -25px;
 	font-size: 20px;
 	line-height: 30px;
 	width: 160px;
@@ -110,14 +138,13 @@ input[type="text"]{
 
 }
 .left-nav li{
-	margin: 2px;
-	height: 35px;
+	margin: 2px 0px 2px 2px;
+	height: 30px;
+	height: 28px\9;
 	width: 100%;
 	list-style-type: none;
 	display: list-item;
-	border-width: 1px;
-	border-color: lightgray;
-	border-style: solid;
+	background-color: #f2f2f2;
 
 }
 .right{
