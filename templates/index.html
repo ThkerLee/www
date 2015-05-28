@@ -7,7 +7,10 @@
 	</script>
 	<script type="text/javascript">
 	$("document").ready(function(){
+
 			conwidth=$(window).width()-4;
+
+			conwidth=$(window).width()-2;
 			rightwidth=conwidth-188;
 			$(".contain").css("width",conwidth)
 			$(".right").css("width",rightwidth)
@@ -16,9 +19,9 @@
 			$(".right-nav").load("./templates/right-nav.html");
 			$(".topnav").load("./templates/top-nav.html");
 			$(".right-content").load("./templates/right-content.html");
-			$(".right-mini-nav").load("./templates/right-mini-nav.html");
+			$(".left-nav ul:first").hide();
+		});
 
-		})
 	</script>
 </head>
 <body>
@@ -28,9 +31,16 @@
 				<img src="test.jpg" 	alt="The LOGO">
 			</div>
 			<div class ="users">
-				<a href="urlchangepass">change pass</a>
-				<a href="urluseseting"> setting</a>
+				<ul>
+					<li><a href="urlchangepass">username</a></li>
+				</ul>
 			</div>
+			<div class ="users">
+				<ul>
+					<li><a href="urlchangepass">change pass</a></li>
+				</ul>
+			</div>
+
 
 
 			<div class="topnav">
@@ -45,12 +55,13 @@
 			<!-- left-nav neirong -->
 		</div>
 
-		<div class="right-mini-nav">
-			<!-- right-mini-nav -->
-		</div>
 
 
 		<div class="right">
+
+<!-- 			<div class="right-mini-nav">
+				right-mini-nav
+			</div> --> 
 
 			<div class="right-nav">
 				<!-- Right-nav neirong -->
