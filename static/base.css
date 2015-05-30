@@ -27,57 +27,56 @@ li a{
 /*.right-mini-nav  span a:link,.right-mini-nav span a:visited{
 	color: #2058b4;
 }*/
-.top-nav li a:link,.top-nav li a:visited,.left-nav span a:link,.left-nav span a:visited{
+ a:link,a:visited,.left-nav  a,.left-nav span a,.top-nav li a{
 	color: #393b3d;
 
 }
-
-li a:link,a:visited{
-	color: #393b3d;
+.menuchoice span li a:link,.menuchoice span li a:visited,a:link;a:visited{
+	color:white;
 }
-li a:hover,.top-nav li a:hover,.left-nav span a:hover {
+.menuchoice span li a:hover{
+	color: white;
+}
+ a:hover,.left-nav  a:hover,.left-nav span a:hover,.top-nav li a:hover {
 	color: #2058b4;
 	width: 100%;
 }
-.left-nav span a:active{
-	font-weight: bold;
-}
+
 input[type="text"]{
 	border-width:0px;
 	border-bottom:1px solid black;
 	height: 25px;
 	display: inline;
 }
+
 .contain {
 	padding: 0px;
 	margin:1px;
 	float: none;
-	width: 80%;
 	font-size: 20px;
 	height: 115%;
 	position: absolute;
 
 }
 .top {
-	height: 70px;
+	height: 65px;
 	background-color: #f2f2f2;
 }
 .logo {
 
-	height: 70px;
-	width: 180px;
+	height: 65px;
+	width: 137px;
 	float: left;
 	background-color: ;
 
 }
 .top-nav {
-
+	margin: 23px 0px 0px 0px;
 	height: 40px;
 	height: 38px\9;
 	width: auto;
-	/*background-color: lightgray;*/
 	float: left;
-	margin: 28px 0px 0px 0px;
+
 	/*border-width: 1px;*/
 	/*border-color: ivory;*/
 	/*border-style: solid;*/
@@ -85,7 +84,7 @@ input[type="text"]{
 .top-nav ul{
 	margin: 0px;
 	font-size: 20px;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	height: 40px;
 	height: 38px\9;
 	line-height: 40px;
@@ -118,10 +117,25 @@ input[type="text"]{
 
 .left{
 	height: 100%;
-	width: 180px;
+	width: 137px;
 	float:left;
 	margin: 0px;
 	padding: 0px;
+
+}
+.menuchoice span{
+	display: inline-block;
+	background-color: #2058b4;
+}
+.menuchoice span li{
+	width: 100%;
+	background-color: transparent;
+}
+.menuchoice span li a{
+	font-weight: bold;
+
+	color:white;
+	background-color:transparent;
 
 }
 .left-nav{
@@ -132,26 +146,28 @@ input[type="text"]{
 
 .left-nav ul{
 
-	margin: 0px 0px 0px -25px;
-	font-size: 20px;
-	line-height: 32px;
-	width: 160px;
+	margin: 0px 0px 0px -30px;
+	font-size: 14px;
+	/*display: none;*/
+	width: 107px;
 
 
 }
 .left-nav li{
-	margin: 2px 0px 2px 2px;
-	height: 30px;
-	height: 28px\9;
+	margin: 2px 0px 2px 0px;
+	height: 28px;
+	height: 24px\9;
 	width: 100%;
-
+	line-height: 28px;
+	line-height: 24px\9;
+	text-vertical-align: middle;;
 	list-style-type: none;
 	display: list-item;
 	background-color: #f2f2f2;
 
 }
 .right{
-	width: 85%;
+	width:;
 	float: right;
 	
 	

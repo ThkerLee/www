@@ -3,19 +3,30 @@
 <html>
 <head>
 	<title></title>
-	<!-- <link rel="stylesheet" type="text/css" href="{{static_url("base.css")}}"> -->
+	<link rel="stylesheet" type="text/css" href="{{static_url("base.css")}}">
 	<script type="text/javascript">
 	$("document").ready(function(){
 	$(".left-nav ul:not(:first)").hide();
-});
+	$(".left-nav:first").addClass("menuchoice");
+	$(".left-nav span").click(function(){
+		$(".menuchoice ul").slideUp("slow");
+		$(".menuchoice").removeClass("menuchoice");
+
+		$(this).parent().addClass("menuchoice");
+		$(".menuchoice ul").show("slow");
+	})
+
+})
 </script>
 </head>
 <body>
 	
-	<div class="left-nav"> 
-		<li id="li"><a href="">我的工作台</a></li>
+	<div class="left-nav">
+		<span>
+			<li><a href="#">我的工作台</a></li>
+		</span>
 		<ul >
-			<li><a href="">daibanshixiang</a></li>
+		<li><a href="">待审核</a></li>
 			<li><a href="">shixiang</a></li>
 			<li><a href="">shixiang</a></li>
 			<li><a href="">hixiang</a></li>
@@ -24,8 +35,10 @@
 
 		</ul>
 	</div>
-		<div class="left-nav"> 
-		<li id="li"><a href="">我的工作台</a></li>
+		<div class="left-nav">
+		<span >
+			<li><a href="#">我的工作台</a></li>
+		</span>
 		<ul>
 			<li><a href="">daibanshixiang</a></li>
 			<li><a href="">shixiang</a></li>

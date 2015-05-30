@@ -7,19 +7,17 @@
 	</script>
 	<script type="text/javascript">
 	$("document").ready(function(){
+			winwidth=$(window).width()-2;
+			rightwidth=winwidth-137;
 
-			conwidth=$(window).width()-4;
-
-			conwidth=$(window).width()-2;
-			rightwidth=conwidth-188;
-			$(".contain").css("width",conwidth)
-			$(".right").css("width",rightwidth)
+			$(".contain").css("width",winwidth);
+			$(".right").css("width",rightwidth);
 
 			$(".left").load('/templates/left-nav.html');
 			$(".right-nav").load("./templates/right-nav.html");
 			$(".topnav").load("./templates/top-nav.html");
 			$(".right-content").load("./templates/right-content.html");
-			$(".left-nav ul:first").hide();
+
 		});
 
 	</script>
