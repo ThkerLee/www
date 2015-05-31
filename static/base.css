@@ -124,11 +124,14 @@ input[type="text"]{
 
 }
 .menuchoice span{
+	margin: 3px 0px 2px 0px;
 	display: inline-block;
 	background-color: #2058b4;
+	width:100%
 }
 .menuchoice span li{
 	width: 100%;
+
 	background-color: transparent;
 }
 .menuchoice span li a{

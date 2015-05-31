@@ -27,7 +27,6 @@ class right_nav(tornado.web.RequestHandler):
 
 	def get(self):
 		self.render("right-nav.html")
-
 class right_mini_nav(tornado.web.RequestHandler):
 
 	def get(self):
