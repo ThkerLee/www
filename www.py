@@ -1,3 +1,6 @@
+
+#coding=utf-8
+
 import tornado.ioloop
 import tornado.web
 import os.path
@@ -18,7 +21,8 @@ class top_nav(tornado.web.RequestHandler):
 class left_nav(tornado.web.RequestHandler):
 
 	def get(self):
-		self.render('left-nav.html')
+		leftmenu={u'我的工作台':(u'待审核单据',u'我的单据',u'已审核单据'),u'的工作台':(u'待审核单据',u'我的单据',u'已审核单据'),}
+		self.render('left-nav.html',menus=leftmenu)
 class right_nav(tornado.web.RequestHandler):
 
 	def get(self):

@@ -20,34 +20,45 @@
 </script>
 </head>
 <body>
-	
+{% for key,vaule in menus.items() %}
 	<div class="left-nav">
-		<span>
-			<li><a href="#">我的工作台</a></li>
-		</span>
-		<ul >
-		<li><a href="">待审核</a></li>
-			<li><a href="">shixiang</a></li>
-			<li><a href="">shixiang</a></li>
-			<li><a href="">hixiang</a></li>
-			<li><a href="">shixiang</a></li>
-			<li><a href="">shixiang</a></li>
 
-		</ul>
-	</div>
-		<div class="left-nav">
-		<span >
-			<li><a href="#">我的工作台</a></li>
-		</span>
-		<ul>
-			<li><a href="">daibanshixiang</a></li>
-			<li><a href="">shixiang</a></li>
-			<li><a href="">shixiang</a></li>
-			<li><a href="">hixiang</a></li>
-			<li><a href="">shixiang</a></li>
-			<li><a href="">shixiang</a></li>
+			<span>
+			<li><a href="#">{{key}}</a></li>
+			</span>
+			<ul>
+				{% for li in vaule %}
+			<li><a href="#">{{li}}</a></li>
+				{% end %}
+			</ul>
 
-		</ul>
+		<!--<span>-->
+			<!--<li><a href="#">我的工作台</a></li>-->
+		<!--</span>-->
+		<!--<ul >-->
+		<!--<li><a href="">待审核</a></li>-->
+			<!--<li><a href="">shixiang</a></li>-->
+			<!--<li><a href="">shixiang</a></li>-->
+			<!--<li><a href="">hixiang</a></li>-->
+			<!--<li><a href="">shixiang</a></li>-->
+			<!--<li><a href="">shixiang</a></li>-->
+
+		<!--</ul>-->
+	<!--</div>-->
+		<!--<div class="left-nav">-->
+		<!--<span >-->
+			<!--<li><a href="#">我的工作台</a></li>-->
+		<!--</span>-->
+		<!--<ul>-->
+			<!--<li><a href="">daibanshixiang</a></li>-->
+			<!--<li><a href="">shixiang</a></li>-->
+			<!--<li><a href="">shixiang</a></li>-->
+			<!--<li><a href="">hixiang</a></li>-->
+			<!--<li><a href="">shixiang</a></li>-->
+			<!--<li><a href="">shixiang</a></li>-->
+
+		<!--</ul>-->
 	</div>
+{% end %}
 </body>
 </html>
