@@ -27,10 +27,10 @@
 			<li><a href="#">{{key}}</a></li>
 			</span>
 			<ul>
-				{% for id,minimenu in ids.items()  %}
-					{% if {{vaule}}=={{id}} %}
-						<li><a href={{id}}>{{minimenu}}</a></li>
-					{% end %}
+				{% for id in vaule %}
+                    {%  if id in ids %}
+						    <li><a href={{id}}>{{ids[id]}}</a></li>
+			        {% end %}
 				{% end %}
 			</ul>
 <!-- 			<span>

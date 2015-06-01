@@ -14,7 +14,7 @@ class mainhandler(tornado.web.RequestHandler):
 		 self.render("index.html")
 		# self.render("index-model.html")
 class top_nav(tornado.web.RequestHandler):
-
+    #
 	def get(self):
 		self.render("top-nav.html")
 
@@ -23,8 +23,8 @@ class left_nav(tornado.web.RequestHandler):
 	def get(self):
 		# leftmenu={u'我的工作台':(u'待审核单据',u'我的单据',u'已审核单据'),}
 		# self.render('left-nav.html',menus=leftmenu)
-		leftmenu={u'我的工作台':('id_daishenhe','id_wodedanju','id_yishenhe'),}
-		leftids={'id_daishenhe':u'待审核单据','id_wodedanju':u'我的单据','id_yishenhe':u'已审核单据',}
+		leftmenu={u'我的工作台':('id_daishenhe','id_wodedanju','id_yishenhe'),u'我的作台':('id_daishenhe1','id_wodedanju1','id_yishenhe1',)}
+		leftids={'id_daishenhe':u'待审核单据','id_wodedanju':u'我的单据','id_yishenhe':u'已审核单据','id_daishenhe1':u'待审核单据','id_wodedanju1':u'我的单据','id_yishenhe1':u'已审核单据',}
 		self.render('left-nav.html',menus=leftmenu,ids=leftids)
 class right_nav(tornado.web.RequestHandler):
 
@@ -62,3 +62,56 @@ def main():
 	tornado.ioloop.IOLoop.instance().start()
 if __name__ =="__main__":
 	main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[poooooooooooooooooooooooooooooooooooooooooooop
+ ]
