@@ -21,8 +21,11 @@ class top_nav(tornado.web.RequestHandler):
 class left_nav(tornado.web.RequestHandler):
 
 	def get(self):
-		leftmenu={u'我的工作台':(u'待审核单据',u'我的单据',u'已审核单据'),u'的工作台':(u'待审核单据',u'我的单据',u'已审核单据'),}
-		self.render('left-nav.html',menus=leftmenu)
+		# leftmenu={u'我的工作台':(u'待审核单据',u'我的单据',u'已审核单据'),}
+		# self.render('left-nav.html',menus=leftmenu)
+		leftmenu={u'我的工作台':('id_daishenhe','id_wodedanju','id_yishenhe'),}
+		leftids={'id_daishenhe':u'待审核单据','id_wodedanju':u'我的单据','id_yishenhe':u'已审核单据',}
+		self.render('left-nav.html',menus=leftmenu,ids=leftids)
 class right_nav(tornado.web.RequestHandler):
 
 	def get(self):
