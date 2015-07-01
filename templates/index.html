@@ -2,83 +2,58 @@
 <html>
 <head>
 	<title>Welcome NexERP</title>
-	<link rel="stylesheet" type="text/css" href="{{static_url("base.css")}}">
-	<script type="text/javascript" src="{{static_url("jquery")}}">
-	</script>
+	<link rel="stylesheet" type="text/css" href="{{static_url("print.css")}}">
+	<script type="text/javascript" src="{{static_url("jquery")}}"></script>
+	<script type="text/javascript" src="{{static_url("jquery.jqprint.js")}}"></script>
+
 	<script type="text/javascript">
-	$("document").ready(function(){
-			winwidth=$(window).width()-2;
-			rightwidth=winwidth-137;
-
-			$(".contain").css("width",winwidth);
-			$(".right").css("width",rightwidth);
-
-			$(".left").load('/templates/left-nav.html');
-			$(".right-nav").load("./templates/right-nav.html");
-			$(".topnav").load("./templates/top-nav.html");
-			$(".right-content").load("./templates/right-content.html");
-
-		});
-
+	$(document).ready(function(){
+	$("div.list").find('div').hover(
+	function(){	
+	$(this).css({'z-index' : '10'});		
+	$(this).find('img').addClass("hover").stop()
+	.animate({
+					marginTop:'-20px',
+					marginLeft:'-75px',
+					marginRight:'-75px',
+					marginButtom:'-130px',
+					height:'300px',
+					width:'400px',
+					},200);}
+	 ,function(){
+	 	$(this).css({'z-index' : '0'});
+	$(this).find('img').removeClass("hover").stop()
+	.animate({
+					marginTop:'0px',
+					marginLeft:'0px',
+					marginRight:'0px',
+					marginButtom:'0px',
+					height:'150px',
+					width:'250px',
+					},200);}
+	)
+	});
+	
 	</script>
 </head>
 <body>
-	<div class="contain">
-		<div class="top">
-			<div class="logo">
-				<img src="test.jpg" 	alt="The LOGO">
-			</div>
-			<div class ="users">
-				<ul>
-					<li><a href="urlchangepass">username</a></li>
-				</ul>
-			</div>
-			<div class ="users">
-				<ul>
-					<li><a href="urlchangepass">change pass</a></li>
-				</ul>
-			</div>
-
-
-
-			<div class="topnav">
-				<!--top-nav neirong  -->
-			</div>
-
-
-		</div>
-	<div class="body">
-
-		<div class="left">
-			<!-- left-nav neirong -->
-		</div>
-
-
-
-		<div class="right">
-
-<!-- 			<div class="right-mini-nav">
-				right-mini-nav
-			</div> --> 
-
-			<div class="right-nav">
-				<!-- Right-nav neirong -->
-			</div>
-
-			<div class="right-content">
-				<!-- right content -->
-			</div>
-
-		</div>
-
-		</div>
-
-
-	    <div class="buttom">
-
-		    <h2>block buttom</h2>
-
-	    </div>
+<div class="body">
+	<div class="left">
+		
 	</div>
+	<div class="right">
+		<div class="top">
+		
+		</div>
+
+		<div class="list">
+			{% for danju in list %}
+				<div class="{{danju[0]}}">
+					<a href="import.html"><img src="./static/image/{{danju[1]}}"></a>
+				</div>
+			{% end %}
+		</div>
+	</div>
+</div>
 </body>
 </html>

@@ -11,34 +11,46 @@ define("debug",default=True,help="run in debug mode")
 class mainhandler(tornado.web.RequestHandler):
 
 	def get(self):
-		 self.render("index.html")
+		printlist=[
+		("shunfeng","shunfeng.jpg")
+		,("shunfeng","shunfeng.jpg")
+		,("shunfeng","shunfeng.jpg")
+		,("shunfeng","shunfeng.jpg")
+		,("shunfeng","shunfeng.jpg")
+		,("shunfeng","shunfeng.jpg")
+		,("shunfeng","shunfeng.jpg")
+		,("shunfeng","shunfeng.jpg")
+		,("shunfeng","shunfeng.jpg")
+		
+		]
+		self.render("index.html",list=printlist)
 		# self.render("index-model.html")
-class top_nav(tornado.web.RequestHandler):
-    #
-	def get(self):
-		self.render("top-nav.html")
+# class top_nav(tornado.web.RequestHandler):
 
-class left_nav(tornado.web.RequestHandler):
+# 	def get(self):
+# 		self.render("top-nav.html")
 
-	def get(self):
-		# leftmenu={u'我的工作台':(u'待审核单据',u'我的单据',u'已审核单据'),}
-		# self.render('left-nav.html',menus=leftmenu)
-		leftmenu={u'我的工作台':('id_daishenhe','id_wodedanju','id_yishenhe'),u'我的作台':('id_daishenhe1','id_wodedanju1','id_yishenhe1',)}
-		leftids={'id_daishenhe':u'待审核单据','id_wodedanju':u'我的单据','id_yishenhe':u'已审核单据','id_daishenhe1':u'待审核单据','id_wodedanju1':u'我的单据','id_yishenhe1':u'已审核单据',}
-		self.render('left-nav.html',menus=leftmenu,ids=leftids)
-class right_nav(tornado.web.RequestHandler):
+# class left_nav(tornado.web.RequestHandler):
 
-	def get(self):
-		self.render("right-nav.html")
-class right_mini_nav(tornado.web.RequestHandler):
+# 	def get(self):
+# 		# leftmenu={u'我的工作台':(u'待审核单据',u'我的单据',u'已审核单据'),}
+# 		# self.render('left-nav.html',menus=leftmenu)
+# 		leftmenu={u'我的工作台':('id_daishenhe','id_wodedanju','id_yishenhe'),}
+# 		leftids={'id_daishenhe':u'待审核单据','id_wodedanju':u'我的单据','id_yishenhe':u'已审核单据',}
+# 		self.render('left-nav.html',menus=leftmenu,ids=leftids)
+# class right_nav(tornado.web.RequestHandler):
 
-	def get(self):
-		self.render("right-mini-nav.html")
+# 	def get(self):
+# 		self.render("right-nav.html")
+# class right_mini_nav(tornado.web.RequestHandler):
 
-class right_content(tornado.web.RequestHandler):
+# 	def get(self):
+# 		self.render("right-mini-nav.html")
 
-	def get(self):
-		self.render("right-conent.html")
+# class right_content(tornado.web.RequestHandler):
+
+# 	def get(self):
+# 		self.render("right-conent.html")
 
 
 
@@ -46,11 +58,11 @@ def main():
 	app=tornado.web.Application(
 		[
 		(r"/",mainhandler),
-		(r"/templates/left-nav.html",left_nav),
-		(r"/templates/right-nav.html",right_nav),
-		(r"/templates/top-nav.html",top_nav),
-		(r"/templates/right-content.html",right_content),
-		(r"/templates/right-mini-nav.html",right_mini_nav),
+		# (r"/templates/left-nav.html",left_nav),
+		# (r"/templates/right-nav.html",right_nav),
+		# (r"/templates/top-nav.html",top_nav),
+		# (r"/templates/right-content.html",right_content),
+		# (r"/templates/right-mini-nav.html",right_mini_nav),
 		],
 
 		template_path=os.path.join(os.path.dirname(__file__),"templates"),
@@ -62,56 +74,3 @@ def main():
 	tornado.ioloop.IOLoop.instance().start()
 if __name__ =="__main__":
 	main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[poooooooooooooooooooooooooooooooooooooooooooop
- ]
